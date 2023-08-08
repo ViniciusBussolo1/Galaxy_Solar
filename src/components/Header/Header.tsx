@@ -3,8 +3,8 @@
 import Image from 'next/image'
 import CountUp from 'react-countup'
 
-import Logo from '../../../public/Header_Logo.svg'
-import ImageHeader from '../../../public/Image_Header.svg'
+import Logo from '../../../public/Header/Header_Logo.svg'
+import ImageHeader from '../../../public/Header/Image_Header.svg'
 
 export default function Header() {
   return (
@@ -34,7 +34,7 @@ export default function Header() {
         </div>
 
         {/* HERO */}
-        <div className="grid max-[744px]:grid-rows-tablet max-[744px]:gap-5  min-[745px]:grid-cols-2 min-[745px]:gap-10">
+        <div className="grid max-[744px]:grid-rows-tablet max-[744px]:gap-5 min-[745px]:grid-cols-2 min-[745px]:gap-10">
           <div className="space-y-2">
             <h1 className="max-w-[30.438rem] text-[2.5rem] leading-[2.75rem] font-medium text-white">
               Energia limpa e renovavel Para um mundo melhor.
