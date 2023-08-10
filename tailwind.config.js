@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        residencial: 'url(/About/Residencial.svg)',
+        comercial: 'url(/About/Comercial.svg)',
+        rural: 'url(/About/Rural.svg)',
+      },
       gridTemplateRows: {
         tablet: '20rem_1fr',
       },
@@ -16,6 +21,7 @@ module.exports = {
         white: '#FFFFFF',
         white70: '#FFFFFFB2',
         gray: '#5A657A',
+        background: 'rgba(0, 0, 0, 0.44)',
       },
       boxShadow: {
         statistics: ' 0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
