@@ -1,8 +1,14 @@
 import Image from 'next/image'
 
+import Logo from '../../../public/Header_Logo.svg'
+
 import User from '../../../public/Footer/User_Square.svg'
 import Smartphone from '../../../public/Footer/Smartphone.svg'
 import Email from '../../../public/Footer/Email.svg'
+
+import Facebook from '../../../public/Footer/Facebook.svg'
+import Youtube from '../../../public/Footer/Youtube.svg'
+import Instagram from '../../../public/Footer/Instagram.svg'
 
 export default function Footer() {
   return (
@@ -75,6 +81,48 @@ export default function Footer() {
             ENVIAR MENSAGEM
           </button>
         </form>
+
+        {/* CONTACT INFOS */}
+        <div className="pt-24 flex justify-between">
+          <div className="space-y-2">
+            <Image src={Logo} alt="Image Logo" />
+            <div className="flex items-center gap-4">
+              <Image src={Facebook} alt="Icon Facebook" />
+              <Image src={Youtube} alt="Icon Youtube" />
+              <Image src={Instagram} alt="Icon Instagram" />
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-5">
+            <h1 className="text-[1.938rem] leading-normal font-semibold text-white">
+              Empresa
+            </h1>
+            <span className="text-lg text-white70 font-medium leading-normal">
+              Sobre
+            </span>
+            <span className="text-lg text-white70 font-medium leading-normal">
+              Clientes
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-5">
+            <h1 className="text-[1.938rem] leading-normal font-semibold text-white">
+              Contatos
+            </h1>
+            <span className="text-lg text-white70 font-medium leading-normal">
+              +55 99 9999-9999
+            </span>
+            <span className="text-lg text-white70 font-medium leading-normal">
+              GalaxySolar@Galaxy.com
+            </span>
+            <span className="text-lg text-white70 font-medium leading-normal">
+              Rua orbita do Sol, 03
+            </span>
+            <span className="text-lg text-white70 font-medium leading-normal">
+              Via Láctea, Terra
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
   )

@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import CountUp from 'react-countup'
 
-import Logo from '../../../public/Header/Header_Logo.svg'
+import Logo from '../../../public/Header_Logo.svg'
 import ImageHeader from '../../../public/Header/Image_Header.svg'
 
 export default function Header() {
