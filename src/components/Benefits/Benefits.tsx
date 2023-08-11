@@ -9,13 +9,13 @@ import BenefitsCard from './BenefitsCard'
 export default function Benefits() {
   return (
     <section className="py-40 flex justify-center items-center">
-      <div className="flex justify-center items-center gap-24 px-2">
+      <div className="flex max-[940px]:flex-col max-[940px]:max-w-[47.188rem] max-[940px]:w-full max-[940px]:items-start justify-center items-center gap-24 px-2 ">
         {/* BENEFITS */}
-        <div className="max-w-[28.125rem] space-y-6">
+        <div className="max-[940px]:max-w-[47.188rem] max-[940px]:w-full max-w-[28.125rem] space-y-6">
           <h1 className="max-w-[26.313rem] text-5xl leading-[4.216rem] font-bold text-black">
             Sobre Nós e Benefícios.
           </h1>
-          <div className="space-y-3">
+          <div className="space-y-3 max-[940px]:w-full">
             <p className="text-lg leading-normal tracking-[0.023rem] text-black">
               Nossa empresa especializada em soluções de energia solar para
               propriedades residenciais, comerciais e rurais. Oferecemos uma
@@ -36,7 +36,7 @@ export default function Benefits() {
         </div>
 
         {/* BENEFITS CARDS */}
-        <div className="w-[36rem] grid grid-cols-2 grid-rows-2 gap-6">
+        <div className="max-[940px]:w-full w-[36rem] grid grid-cols-2 grid-rows-2 gap-6 max-[940px]:place-content-between">
           <BenefitsCard
             image={LeafyGreen}
             alt="Image Leafy Green"
