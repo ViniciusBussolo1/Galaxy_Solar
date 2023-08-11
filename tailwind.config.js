@@ -11,6 +11,8 @@ module.exports = {
         residencial: 'url(/About/Residencial.svg)',
         comercial: 'url(/About/Comercial.svg)',
         rural: 'url(/About/Rural.svg)',
+        'linear-gradient-button':
+          'linear-gradient(124deg, #0496FF 0%, #0076CB 100%)',
       },
       gridTemplateRows: {
         tablet: '20rem_1fr',
@@ -25,6 +27,8 @@ module.exports = {
       },
       boxShadow: {
         statistics: ' 0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+        input: '0px 1px 2px 0px rgba(16, 24, 40, 0.05)',
+        button: '0px 1px 2px 0px rgba(0, 0, 0, 0.10)',
       },
     },
   },
