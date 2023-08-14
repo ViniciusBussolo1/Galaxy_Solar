@@ -22,11 +22,11 @@ export default function Customers() {
   SwiperCore.use([Navigation])
 
   return (
-    <section className="bg-black flex justify-center items-center pt-16 pb-36">
+    <section className="bg-black flex justify-center items-center pt-16 pb-36 px-4">
       <div className="max-w-[70rem] w-full">
         {/* CUSTOMERS TITLE */}
-        <div className="w-full flex justify-between">
-          <h1 className="text-5xl font-bold leading-normal text-white">
+        <div className="w-full flex items-center justify-between">
+          <h1 className="max-[525px]:text-4xl text-5xl font-bold leading-normal text-white">
             Nossos Clientes
           </h1>
           <div className="flex gap-5">
@@ -48,7 +48,16 @@ export default function Customers() {
             prevEl: '.custom-swiper-button-prev',
             nextEl: '.custom-swiper-button-next',
           }}
-          slidesPerView={3}
+          breakpoints={{
+            375: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            744: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
           className="mt-36"
         >
           <SwiperSlide>
