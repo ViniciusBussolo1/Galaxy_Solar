@@ -12,7 +12,7 @@ import Instagram from '../../../public/Footer/Instagram.svg'
 
 export default function Footer() {
   return (
-    <footer className="bg-black flex justify-center items-center pt-[3.625rem] pb-[3.125rem]">
+    <footer className="bg-black flex justify-center items-center pt-[3.625rem] pb-[3.125rem] px-4">
       <div className="w-[68.25rem] space-y-4">
         {/* CONTACT TITLE */}
         <h1 className="text-5xl leading-normal font-bold text-white">
@@ -30,10 +30,10 @@ export default function Footer() {
         {/* CONTACT FORM */}
         <form className="w-full">
           {/* FORM INPUT USER SMARTPHONE */}
-          <div className="flex gap-2 justify-between">
-            <div className="space-y-3 max-w-[32.25rem] w-full">
+          <div className="max-[744px]:w-full flex max-[744px]:flex-col gap-2 min-[744px]:justify-between">
+            <div className="space-y-3 max-[744px]:w-full min-[744px]:max-w-[32.25rem] w-full">
               <label className="text-sm font-medium text-white">Nome</label>
-              <div className=" flex gap-2 py-3 px-[0.875rem] rounded-lg bg-white shadow-input focus-within:outline focus-within:outline-[2px] focus-within:outline-blue">
+              <div className="flex gap-2 py-3 px-[0.875rem] rounded-lg bg-white shadow-input focus-within:outline focus-within:outline-[2px] focus-within:outline-blue">
                 <Image src={User} alt="Image User" />
                 <input
                   type="text"
@@ -42,7 +42,7 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <div className="space-y-3 max-w-[32.25rem] w-full">
+            <div className="space-y-3 max-[744px]:w-full min-[744px]:max-w-[32.25rem] w-full">
               <label className="text-sm font-medium text-white">Telefone</label>
               <div className=" flex gap-2 py-3 px-[0.875rem] rounded-lg bg-white shadow-input focus-within:outline focus-within:outline-[2px] focus-within:outline-blue">
                 <Image src={Smartphone} alt="Image Smartphone" />

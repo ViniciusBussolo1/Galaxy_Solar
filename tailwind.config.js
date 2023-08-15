@@ -9,8 +9,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         residencial: 'url(/About/Residencial.svg)',
+        residencial2: 'url(/About/Residencial2.svg)',
         comercial: 'url(/About/Comercial.svg)',
+        comercial2: 'url(/About/Comercial2.svg)',
         rural: 'url(/About/Rural.svg)',
+        rural2: 'url(/About/Rural2.svg)',
         'linear-gradient-button':
           'linear-gradient(124deg, #0496FF 0%, #0076CB 100%)',
       },
