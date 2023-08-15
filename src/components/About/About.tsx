@@ -8,7 +8,7 @@ export default function About() {
         </h1>
 
         {/* ABOUT CARDS */}
-        <div className="grid max-[744px]:grid-rows-3 min-[744px]:grid-cols-3 gap-4">
+        <div className="grid max-[743px]:grid-rows-3 min-[744px]:grid-cols-3 gap-4">
           <div className="max-[744px]:h-[13.688rem] min-[744px]:h-[30.188rem] max-[744px]:bg-residencial2 min-[744px]:bg-residencial bg-no-repeat bg-cover rounded-[0.313rem] flex justify-center items-center">
             <div className="bg-[#00000070] z-50 w-full h-full flex justify-center items-center rounded-[0.313rem]">
               <h1 className="text-[2.375rem] leading-normal font-bold text-white ">
