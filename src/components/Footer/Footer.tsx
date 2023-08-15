@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
             <div className="space-y-3 max-[744px]:w-full min-[744px]:max-w-[32.25rem] w-full">
               <label className="text-sm font-medium text-white">Telefone</label>
-              <div className=" flex gap-2 py-3 px-[0.875rem] rounded-lg bg-white shadow-input focus-within:outline focus-within:outline-[2px] focus-within:outline-blue">
+              <div className="flex gap-2 py-3 px-[0.875rem] rounded-lg bg-white shadow-input focus-within:outline focus-within:outline-[2px] focus-within:outline-blue">
                 <Image src={Smartphone} alt="Image Smartphone" />
                 <input
                   type="text"
@@ -77,13 +77,13 @@ export default function Footer() {
             ></textarea>
           </div>
 
-          <button className="w-[28rem] text-lg leading-6 font-semibold text-white mt-3 py-4 px-8 bg-linear-gradient-button rounded-[0.313rem]">
+          <button className="max-w-[28rem] w-full text-lg leading-6 font-semibold text-white mt-3 py-4 px-8 bg-linear-gradient-button rounded-[0.313rem]">
             ENVIAR MENSAGEM
           </button>
         </form>
 
         {/* CONTACT INFOS */}
-        <div className="pt-24 flex justify-between">
+        <div className="pt-24 flex max-[491px]:flex-col max-[491px]:space-y-9 justify-between">
           <div className="space-y-2">
             <Image src={Logo} alt="Image Logo" />
             <div className="flex items-center gap-4">

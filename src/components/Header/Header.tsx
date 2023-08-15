@@ -5,6 +5,7 @@ import CountUp from 'react-countup'
 
 import Logo from '../../../public/Header_Logo.svg'
 import ImageHeader from '../../../public/Header/Image_Header.svg'
+import Menu from '../../../public/Header/Menu.svg'
 
 export default function Header() {
   return (
@@ -13,7 +14,7 @@ export default function Header() {
         {/* HEADER */}
         <div className="w-full h-[3.5rem] flex justify-between items-center">
           <Image src={Logo} alt="Logo GalaxySolar" />
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-10 max-[549px]:hidden">
             <nav>
               <ul className="flex gap-10">
                 <li className="text-white text-base cursor-pointer hover:text-white70">
@@ -31,6 +32,11 @@ export default function Header() {
               Contate-nos
             </button>
           </div>
+          <Image
+            src={Menu}
+            alt="Menu Image"
+            className="max-[549px]:block hidden"
+          />
         </div>
 
         {/* HERO */}
@@ -51,8 +57,8 @@ export default function Header() {
 
         {/* STATISTICS */}
         <div className="w-full flex justify-center absolute max-[744px]:top-[740px] min-[745px]:top-[470px]">
-          <div className="w-[49.188rem] h-[6.375rem] bg-white rounded-lg shadow-statistics flex justify-between items-center gap-2 px-4">
-            <div className="max-w-[10.563rem] flex flex-col gap-1">
+          <div className="w-[49.188rem] h-[6.375rem] bg-white rounded-lg shadow-statistics flex max-[599px]:justify-center max-[599px]:gap-10 justify-between items-center gap-2 px-4">
+            <div className="max-w-[10.563rem] flex flex-col gap-1 max-[599px]:hidden">
               <span className="text-[1.75rem] font-bold text-blue">
                 {' '}
                 +<CountUp start={0} end={1200} />
@@ -61,13 +67,13 @@ export default function Header() {
                 Baterias Instalados
               </span>
             </div>
-            <div className="max-w-[4.625rem] flex flex-col gap-1">
+            <div className="max-w-[4.625rem] flex flex-col gap-1 max-[599px]:flex max-[743px]:hidden">
               <span className="text-[1.75rem] font-bold text-blue">
                 +<CountUp start={0} end={532} />
               </span>
               <span className="text-lg font-semibold text-black">Clientes</span>
             </div>
-            <div className="max-w-[12.25rem] flex flex-col gap-1">
+            <div className="max-w-[12.25rem] flex flex-col gap-1 max-[599px]:hidden">
               <span className="text-[1.75rem] font-bold text-blue">
                 R$ 46,331
               </span>
