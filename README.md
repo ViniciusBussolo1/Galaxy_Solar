@@ -1,7 +1,7 @@
 # Galaxy_Solar
 
 <p align="center">
-  <img src=".github/Galaxy_Solar.png" width="100%" />
+  <img src=".github/Preview.png" width="100%" />
 </p>
 
 ## 💻 Projeto
